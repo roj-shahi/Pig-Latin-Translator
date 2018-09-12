@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Translation } from './translation';
 
 @Component({
@@ -7,8 +7,7 @@ import { Translation } from './translation';
   styleUrls: ['./app.component.scss']
 })
 
-export class AppComponent implements OnInit {
-	
+export class AppComponent {
 	userText: string = '';
 	vowels = ['a', 'e', 'i', 'o', 'u'];
 	result: Translation = {
@@ -68,8 +67,4 @@ export class AppComponent implements OnInit {
 
 		this.resultHistory.push(result);
 	}
-
-	ngOnInit() {
-  	}
-
 }
